@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -26,5 +26,14 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .ion-invalid.ion-touched ion-label {
-	color: var(--ion-color-danger);
+  color: var(--ion-color-danger);
+}
+
+.header-ios ion-toolbar:last-child {
+  --border-width: 0;
+}
+
+ion-content {
+  --background: #fbfbfb;
+  --ion-item-background: #fff;
 }
